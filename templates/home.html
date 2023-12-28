@@ -1,0 +1,22 @@
+<table border="1" style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr style="background-color: #f2f2f2; font-weight: bold;">
+            <td style="padding: 8px;">Ism</td>
+            <td style="padding: 8px;">Familiya</td>
+            <td style="padding: 8px;">Telefon</td>
+            <td style="padding: 8px;">Email</td>
+            <td style="padding: 8px;">Xabar</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for message in messages %}
+            <tr>
+                <td style="padding: 8px;">{{ message.ism }}</td>
+                <td style="padding: 8px;">{{ message.familiya }}</td>
+                <td style="padding: 8px;">{{ message.telefon }}</td>
+                <td style="padding: 8px;">{{ message.email }}</td>
+                <td style="padding: 8px;">{{ message.xabar }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
